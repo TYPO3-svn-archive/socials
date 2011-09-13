@@ -1,0 +1,86 @@
+{namespace socials=Tx_Socials_ViewHelpers}
+
+<socials:includeFile path="{settings.cssPath}" />
+<f:if condition="{settings.2clickPrivacy}">
+	<f:then>
+
+		<f:if condition="{settings.jqueryPath}">
+			<script type="text/javascript" src="{settings.jqueryPath}"></script>
+		</f:if>
+		<script type="text/javascript" src="typo3conf/ext/socials/Resources/Public/Contrib/socialshareprivacy/jquery.socialshareprivacy.js"></script>
+		<script type="text/javascript">
+			var facebookLikeActive = ('{allowedItems.facebooklike}' == '1') ? 'on' : 'off';
+			var twitterActive = ('{allowedItems.twitter}' == '1') ? 'on' : 'off';
+			var googlePlusActive = ('{allowedItems.googleplus}' == '1') ? 'on' : 'off';
+			jQuery(document).ready(function($){
+				if($('#socialshareprivacy').length > 0){brk1}
+					$('#socialshareprivacy').socialSharePrivacy({brk1}
+						'info_link'         : '<f:uri.page pageUid="{settings.socialSharePrivacy.info_link}" />',
+						'txt_help'          : '<f:translate key="socialSharePrivacy.txt_help" />',
+						'settings_perma'    : '<f:translate key="socialSharePrivacy.settings_perma" />',
+						'show_info'         : '{settings.socialSharePrivacy.show_info}',
+						services : {brk1}
+							facebook : {brk1}
+								'status' : facebookLikeActive,
+								'app_id'      : '0123456789',
+							{brk2},
+							twitter : {brk1}
+								'status' : twitterActive
+							{brk2},
+							gplus : {brk1}
+								'status' : googlePlusActive,
+								'display_name' : 'Google Plus'
+							{brk2}
+						{brk2}
+					{brk2});
+				{brk2}
+			{brk2});
+		</script>
+
+		  <div id="socialshareprivacy">
+
+		  </div>
+	</f:then>
+
+	<f:else>
+
+		<div id="socialshareprivacy">
+			<ul class="social_share_privacy_area">
+				<f:if condition="{allowedItems.googleplus}">
+					<li class="gplus help_info info_off">
+						<div class="fb_like dummy_btn">
+							<socials:googlePlus size="small"></socials:googlePlus>
+						</div>
+					</li>
+				</f:if>
+
+				<f:if condition="{allowedItems.twitter}">
+					<li class="twitter help_info info_off">
+						<div class="fb_like dummy_btn">
+							<socials:twitter></socials:twitter>
+						</div>
+					</li>
+				</f:if>
+
+				<f:if condition="{allowedItems.facebooklike}">
+					<li class="facebook help_info info_off">
+						<div class="fb_like dummy_btn">
+							<socials:facebook.like />
+						</div>
+					</li>
+				</f:if>
+
+				<f:if condition="{allowedItems.facebookshare}">
+					<li class="facebook help_info info_off">
+						<div class="fb_like dummy_btn">
+							<socials:facebook.share>Share</socials:facebook.share>
+						</div>
+					</li>
+				</f:if>
+
+			</ul>
+		</div>
+	</f:else>
+</f:if>
+
+

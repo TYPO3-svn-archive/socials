@@ -1,0 +1,29 @@
+
+# ==============================================
+# FE-Plugin configuration for EXT:socials
+# ==============================================
+plugin.tx_socials {
+	view {
+		templateRootPath = {$plugin.tx_socials.view.templateRootPath}
+	}
+
+	# Modify the translation
+	_LOCAL_LANG {
+		default {
+			# read_more = more >>
+		}
+	}
+
+	# ====================================
+	# Settings available inside Controller and View by accessing $this->settings or {settings.xyz}
+	# ====================================
+	settings {
+		cssPath = typo3conf/ext/socials/Resources/Public/Contrib/socialshareprivacy/res/styles.css
+		jqueryPath = http://code.jquery.com/jquery-1.6.3.min.js
+
+		socialSharePrivacy {
+			info_link = 123
+			show_info = off
+		}
+	}
+}

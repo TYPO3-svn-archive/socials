@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for socials</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">Social Sharing</label>
+			<label index="socialSharePrivacy.settings_perma">Permanent activation:</label>
+			<label index="socialSharePrivacy.txt_help">Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an Facebook, Twitter oder Google in die USA übertragen und unter Umständen auch dort gespeichert. Näheres erfahren Sie durch einen Klick auf das "i".</label>
+		</languageKey>
+
+		<!--  German  -->
+		<languageKey index="de" type="array">
+			<label index="pi1_title">Social Sharing</label>
+			<label index="socialSharePrivacy.settings_perma">Dauerhaft aktivieren und Datenütragung zustimmen:</label>
+			<label index="socialSharePrivacy.txt_help">Wenn Sie diese Felder durch einen Klick aktivieren, werden Informationen an Facebook, Twitter oder Google in die USA übertragen und unter Umständen auch dort gespeichert. Näheres erfahren Sie durch einen Klick auf das "i".</label>
+		</languageKey>
+
+	</data>
+</T3locallang>

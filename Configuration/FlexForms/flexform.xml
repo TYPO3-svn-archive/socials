@@ -1,0 +1,78 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+
+	<sheets>
+		<!--
+			################################
+			  SHEET General Settings
+			################################
+		-->
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_tab.settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!-- View -->
+					<switchableControllerActions>
+						<TCEforms>
+						<label>LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.mode</label>
+						<config>
+							<type>select</type>
+							<items>
+								<numIndex index="1">
+									<numIndex index="0">LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.mode.share_show</numIndex>
+									<numIndex index="1">Share->show</numIndex>
+								</numIndex>
+							</items>
+						</config>
+						</TCEforms>
+					</switchableControllerActions>
+
+					<!-- Available items -->
+					<settings.items>
+						<TCEforms>
+							<label>LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.items</label>
+							<config>
+								<type>select</type>
+								<size>10</size>
+								<maxitems>10</maxitems>
+								<items>
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.items.googleplus</numIndex>
+										<numIndex index="1">googleplus</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.items.facebooklike</numIndex>
+										<numIndex index="1">facebooklike</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.items.facebookshare</numIndex>
+										<numIndex index="1">facebookshare</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.items.twitter</numIndex>
+										<numIndex index="1">twitter</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.items>+
+
+					<!-- 2click privacy -->
+					<settings.2clickPrivacy>
+						<TCEforms>
+							<label>LLL:EXT:socials/Resources/Private/Language/locallang_be.xml:flexforms_general.2clickPrivacy</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.2clickPrivacy>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

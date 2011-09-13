@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for backend of socials</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pi1_title">Social Sharing</label>
+			<label index="pi1_plus_wiz_description">Share to popular social sites like Facebook, Google+ &amp; Twitter.</label>
+
+			<!-- Flexforms -->
+			<label index="flexforms_tab.settings">Settings</label>
+
+
+			<label index="flexforms_general.mode">What to display</label>
+			<label index="flexforms_general.mode.share_show">Show</label>
+			<label index="flexforms_general.items">Items</label>
+			<label index="flexforms_general.items.nothing_selected">No site to share selected!</label>
+			<label index="flexforms_general.items.googleplus">Google+</label>
+			<label index="flexforms_general.items.twitter">Twitter</label>
+			<label index="flexforms_general.items.facebooklike">Facebook: Like</label>
+			<label index="flexforms_general.items.facebookshare">Facebook: Share</label>
+			<label index="flexforms_general.2clickPrivacy">Enable 2click privacy</label>
+
+		</languageKey>
+
+	</data>
+</T3locallang>

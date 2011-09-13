@@ -1,0 +1,6 @@
+plugin.tx_socials {
+	view {
+		 # cat=plugin.tx_socials/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:socials/Resources/Private/Templates/
+	}
+}
